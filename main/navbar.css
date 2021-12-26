@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mob-nav{
+    display: none;
+}
+
+.nav-bar-desktop {
+    z-index: 1000;
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: #121212;
+}
+
+.desk-nav-frame {
+    max-width: 1200px;
+    min-width: 600px;
+    width: 1200px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.desk-nav-frame li {
+    padding-top: 20px;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.desk-nav-frame .login {
+    height: 30px;
+    width: 90px;
+    margin-top: 14px;
+    margin-right: 12px;
+    list-style: none;
+    color: #FC00BD;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0px;
+    background-color: #FFF;
+    border: 2px solid #FC00Db;
+    border-radius: 5px;
+}
+
+.desk-nav-frame .register {
+    height: 30px;
+    width: 90px;
+    margin-top: 14px;
+    list-style: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #FC00Db;
+    border: 2px solid #FC00Db;
+    border-radius: 5px;
+}
+
+.community-dropdown-desk{
+    position: absolute;
+    background-color: #FFF;
+    margin-top: 30px;
+    margin-left: -50px;
+    color: black;
+    border-radius: 3px;
+    padding: 18px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-dropdown-desk{
+    position: absolute;
+    background-color: #FFF;
+    margin-top: 30px;
+    margin-left: -40px;
+    color: black;
+    border-radius: 3px;
+    padding: 18px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.resource-dropdown-desk{
+    position: absolute;
+    background-color: #FFF;
+    margin-top: 30px;
+    margin-left: -40px;
+    color: black;
+    border-radius: 3px;
+    padding: 18px;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.desk-dropdown ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.desk-dropdown li{
+    list-style: none;
+    margin: 0px;
+    padding: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+p::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: #b6228f;
+    bottom: -10px;
+    left: 0;
+    animation: dd 0.5s ease;
+}
+
+@keyframes dd{
+    0%{
+        width: 0px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 820px) {
+
+    .nav-bar-desktop{
+        display: none;
+    }
+
+    /* Start of Mobile Nav Bar */
+    .mob-nav{
+        width: 100vw;
+        height: 60px;
+        background-color: #232323;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        justify-content: center;
+        display: flex;
+    }
+
+    .mob-nav-frame {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        color: #FFF;
+    }
+
+    .mob-nav-frame-left {
+        padding-left: 10px;
+    }
+
+    .mob-nav-frame-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: space-between;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 18px;
+    }
+    /* End of Mobile Nav Bar */
+}
+
+
+.catalog-dropdown-desk {
+    position: absolute;
+    width: 1200px;
+    height: 500px;
+    overflow: scroll;
+    background-color: #FFF;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-left: -300px;
+    z-index: 100;
+    color: black;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);     
+}
+
+.dropdown-main-1-card{
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #DDD;
+}
+
+.dropdown-main-1-main-card{
+    width: 250px;
+    height: 270px;
+    border-top-left-radius: 5px;
+    background-color: #EFEFEF;
+    padding: 20px;
+    font-size: small;
+}
+
+.dropdown-main-1-main-card b{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.dropdown-main-1-sub-card{
+    height: 250px;
+    border-top-left-radius: 5px;
+    padding: 20px;
+    font-size: small;
+}
+
+.dropdown-main-1-sub-card ul{
+    list-style: none;
+    padding: 0px;
+    display: block;
+    margin-left: -12px;
+}
+.dropdown-main-1-sub-card li{
+    list-style: none;
+    margin-left: 10px;
+}
+
+.dropdown-main-1-sub-card b{
+    font-size: 16px;
+    color: #505050;
+    font-weight: 600;
+}
