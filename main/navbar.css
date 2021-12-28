@@ -111,25 +111,6 @@
     font-size: 15px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-p::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    position: absolute;
-    background-color: #b6228f;
-    bottom: -10px;
-    left: 0;
-    animation: dd 0.5s ease;
-}
-
-@keyframes dd{
-    0%{
-        width: 0px;
-    }
-    100%{
-        width: 100px;
-    }
-}
 
 @media screen and (max-width: 820px) {
 
