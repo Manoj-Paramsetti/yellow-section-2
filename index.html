@@ -1127,13 +1127,12 @@
             var dp3 = $(".resource-dropdown-desk");
             var dp4 = $(".pricing-dropdown-desk");
             var dp5 = $(".profile-dropdown-desk");
-            console.log("initial");
+            
             dp1.hide();
             dp2.hide();
             dp3.hide();
             dp4.hide();
             dp5.hide();
-        
         </script>
         <script>
             var dp1 = $(".catalog-dropdown-desk");
@@ -1149,16 +1148,13 @@
             var DP5 = $(".5-dropdown");
     
             $(".catalog-desk").click(function(){
-                console.log("catalog");
-                console.log(dp1.is(":hidden"));
-                (dp1.is(":hidden")) ? dp1.show() : dp1.hide();
-                console.log(dp1.is(":hidden"));
+                dp1.toggle();
             });
             $(".community-desk").click(function(){
-                (dp2.is(":hidden")) ? dp2.show() : dp2.hide();
+                dp2.toggle();
             });
             $(".resource-desk").click(function(){
-                (dp3.is(":hidden")) ? dp3.show() : dp3.hide();
+                dp3.toggle();
             });
             $(".pricing-desk").click(function(){
                 console.log(dp4.is(":hidden"));
@@ -1170,8 +1166,6 @@
 
             $(document).mouseup(function(e){
                 if(!DP1.is(e.target) && DP1.has(e.target).length === 0){
-                    console.log("target");
-                    console.log(DP1.is(e.target));
                     dp1.hide();
                 }
                 if(!DP2.is(e.target) && DP2.has(e.target).length === 0){
