@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 *{
     margin: 0;
     box-sizing: border-box;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .mob-nav{
@@ -101,7 +100,7 @@
     position: absolute;
     background-color: #FFF;
     margin-top: 30px;
-    margin-left: -200px;
+    margin-left: -170px;
     color: black;
     border-radius: 3px;
     padding: 18px;
@@ -120,8 +119,13 @@
     border: 2px solid black;
 }
 
+.catalog-desk:hover, .community-desk:hover, .resource-desk:hover, .pricing-desk:hover, .carrer-desk:hover{
+    color: #FC00BD;
+}
+
 .profile-avatar{
     cursor: pointer;
+    margin-right: 50px;
 }
 
 .profile-avatar:hover{
@@ -139,6 +143,9 @@
     margin: 0px;
     padding: 15px;
     font-size: 15px;
+}
+.dropdown-main-1-sub-card li:hover, .desk-dropdown li:hover{
+    color: #FC00BD;
 }
 
 @media screen and (max-width: 820px) {
