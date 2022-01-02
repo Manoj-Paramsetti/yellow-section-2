@@ -7,12 +7,26 @@ const nav_priPage = document.getElementsByClassName('nav-priPage');
 var scrollbar = window.scrollY;
 
 if(scrollbar > 20){
+    document.getElementsByClassName('mob-nav')[0].style.background = "#FFF";
+    document.getElementsByClassName('mob-nav')[0].style.color = "#1A191D";    
+    
+    document.getElementsByClassName('mob-nav-frame-right')[0].style.filer = "invert(100%)";  
+    
     document.getElementsByClassName('nav-bar-desktop')[0].style.background = "#FFF";
-    document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";      
+    document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";
+    
+    
 }
 else{
     document.getElementsByClassName('nav-bar-desktop')[0].style.background = "none";
     document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";  
+
+    document.getElementsByClassName('mob-nav')[0].style.background = "none";
+    document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
+    
+    document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
+
+        
 }
 
 function hideMobNavigationMenu(){
@@ -77,12 +91,22 @@ window.addEventListener('resize', function(event){
 window.addEventListener('scroll', function(event){
     var scrollbar = window.scrollY;
     if(scrollbar > 20){
+        document.getElementsByClassName('mob-nav')[0].style.background = "#FFF";
+        document.getElementsByClassName('mob-nav')[0].style.color = "#1A191D";
+        
+        document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(100%)";
+        
         document.getElementsByClassName('nav-bar-desktop')[0].style.background = "#FFF";
-        document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";      
+        document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#121212";
     }
     else{
         document.getElementsByClassName('nav-bar-desktop')[0].style.background = "none";
-        document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";  
+        document.getElementsByClassName('nav-bar-desktop')[0].style.color = "#FFF";
+
+        document.getElementsByClassName('mob-nav-frame-right')[0].style.filter = "invert(0%)";
+
+        document.getElementsByClassName('mob-nav')[0].style.background = "none";
+        document.getElementsByClassName('mob-nav')[0].style.color = "#fff";
     }
 });
 

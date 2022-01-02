@@ -184,7 +184,7 @@
   .mob-nav {
     width: 100vw;
     height: 60px;
-    background-color: #232323;
+    background: #1A191D;
     position: fixed;
     z-index: 10;
     top: 0;
